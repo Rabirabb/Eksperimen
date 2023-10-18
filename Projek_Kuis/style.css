@@ -1,0 +1,126 @@
+/* Reset CSS untuk menghilangkan margin dan padding default */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Atur latar belakang dan warna teks */
+body {
+    background-image: url('KampusGw.jpg');
+    background-size: cover; /* Untuk memenuhi seluruh area layar */
+    background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar */
+    background-attachment: fixed; /* Untuk memastikan latar belakang tetap di tempat */
+    font-family: 'Arial', sans-serif; /* Atur jenis huruf sesuai kebutuhan */
+    color: #333; /* Warna teks */
+    line-height: 1.6;
+}
+/* Tambahkan lapisan gelap */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Warna hitam transparan (0.5 adalah tingkat transparansi) */
+    z-index: -1; /* Mengatur lapisan di belakang konten utama */
+}
+/* Gaya header */
+header {
+    background-color: #cc8c2d; /* Biru Tua */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Gaya konten */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c2b71d; /* Oranye */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya judul */
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Gaya subjudul */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Gaya tautan menu */
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Gaya footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #cc8c2d; /* Biru Tua */
+    color: #fff;
+}
+
+/* Gaya tautan pada halaman */
+a {
+    color: #180707; /* Oranye */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Gaya kotak pilihan jenis kuis */
+.quiz-box {
+    background-color: #F7A100; /* Warna latar belakang Oranye */
+    border: 2px solid #565737; /* Warna garis border Biru Tua */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block; /* Agar kotak-kotaknya berdampingan */
+    width: calc(25% - 20px); /* Lebar sesuai dengan jumlah kotak */
+    box-sizing: border-box;
+    height: 100px; /* Tinggi kotak */
+}
+
+.quiz-box a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    height: 100%; /* Tinggi tautan sesuai dengan tinggi kotak */
+}
+
+.quiz-box a:hover {
+    background-color: #7ba800; /* Warna latar belakang Biru Tua saat dihover */
+}
+/* Gaya tentang website */
+#tentang-web {
+    text-align: center; /* Membuat teks menjadi rata tengah */
+}
